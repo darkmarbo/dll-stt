@@ -1,0 +1,52 @@
+﻿生成启动时间为 2015/12/25 10:33:43。
+     1>项目“D:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\ttsdll\ttsdll.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TTSDLL_EXPORTS /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Char2Pinyin.cpp getLabel.cpp HTS_audio.cpp HTS_engine.cpp HTS_gstream.cpp HTS_label.cpp HTS_misc.cpp HTS_model.cpp HTS_pstream.cpp HTS_sstream.cpp HTS_vocoder.cpp inter_lib.cpp ProsodicAnalysis.cpp str_fun.cpp Table.cpp Vocoder.cpp
+         Vocoder.cpp
+     1>d:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\ttsdll\vocoder.cpp(1845): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\ttsdll\vocoder.cpp(1888): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\ttsdll\vocoder.cpp(1839): warning C4101: “pbuff”: 未引用的局部变量
+         Table.cpp
+     1>d:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\ttsdll\table.cpp(19): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\ttsdll\table.cpp(25): warning C4018: “<”: 有符号/无符号不匹配
+         str_fun.cpp
+         ProsodicAnalysis.cpp
+         inter_lib.cpp
+     1>d:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\ttsdll\inter_lib.cpp(148): warning C4101: “teof”: 未引用的局部变量
+     1>d:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\ttsdll\inter_lib.cpp(409): warning C4101: “teof”: 未引用的局部变量
+         HTS_vocoder.cpp
+         HTS_sstream.cpp
+         HTS_pstream.cpp
+         HTS_model.cpp
+         HTS_misc.cpp
+         HTS_label.cpp
+         HTS_gstream.cpp
+         HTS_engine.cpp
+         HTS_audio.cpp
+         getLabel.cpp
+         Char2Pinyin.cpp
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\Debug\ttsdll.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\Debug\ttsdll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\Debug\ttsdll.lib" /MACHINE:X86 /DLL Debug\Char2Pinyin.obj
+         Debug\getLabel.obj
+         Debug\HTS_audio.obj
+         Debug\HTS_engine.obj
+         Debug\HTS_gstream.obj
+         Debug\HTS_label.obj
+         Debug\HTS_misc.obj
+         Debug\HTS_model.obj
+         Debug\HTS_pstream.obj
+         Debug\HTS_sstream.obj
+         Debug\HTS_vocoder.obj
+         Debug\inter_lib.obj
+         Debug\ProsodicAnalysis.obj
+         Debug\str_fun.obj
+         Debug\Table.obj
+         Debug\Vocoder.obj
+            正在创建库 D:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\Debug\ttsdll.lib 和对象 D:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\Debug\ttsdll.exp
+         ttsdll.vcxproj -> D:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\Debug\ttsdll.dll
+     1>已完成生成项目“D:\so_tts\src-合成器代码\src-dll\ttsdll - 添加pre_pro -vs2013\ttsdll\ttsdll\ttsdll.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.58
