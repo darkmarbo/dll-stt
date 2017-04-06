@@ -374,6 +374,7 @@ int TTS::line2short_array(const char *line, short *out, int out_size)
 	fprintf(fp_log, "LPCSynth ok!\n");
 	fflush(fp_log);
 
+	// 将 gen最后面的456个采样点 丢弃 
     short short0 = 0;
     for(i=0; i<len-456; i++)
     {
@@ -389,6 +390,7 @@ int TTS::line2short_array(const char *line, short *out, int out_size)
         }
     }
 
+	// out最后的 LEN_SIL=300个采样点 加上静音 
 	for (i = 0; i<LEN_SIL; i++)
     {
         if(i+len-456 < out_size)
