@@ -81,19 +81,19 @@ int TTS::init(const char *model_dir)
 
     //声学模型相关文件的存储位置,写入字符串中
     char *durname = new char[MAX_PATH_SIZE];
-    _snprintf(durname, MAX_PATH_SIZE-1, "%s\\model\\dur.pdf", model_dir);
+    _snprintf(durname, MAX_PATH_SIZE-1, "%s\\dur.pdf", model_dir);
     char *durtreename = new char[MAX_PATH_SIZE];
-    _snprintf(durtreename, MAX_PATH_SIZE-1, "%s\\model\\tree-dur.inf", model_dir);
+    _snprintf(durtreename, MAX_PATH_SIZE-1, "%s\\tree-dur.inf", model_dir);
     char *lspname = new char[MAX_PATH_SIZE];
-    _snprintf(lspname, MAX_PATH_SIZE-1, "%s\\model\\lsp.pdf", model_dir);
+    _snprintf(lspname, MAX_PATH_SIZE-1, "%s\\lsp.pdf", model_dir);
     char *lsptreename = new char[MAX_PATH_SIZE];
-    _snprintf(lsptreename, MAX_PATH_SIZE-1, "%s\\model\\tree-lsp.inf", model_dir);
+    _snprintf(lsptreename, MAX_PATH_SIZE-1, "%s\\tree-lsp.inf", model_dir);
     char *lspwinfn1 = new char[MAX_PATH_SIZE];
-    _snprintf(lspwinfn1, MAX_PATH_SIZE-1, "%s\\model\\lsp.win1", model_dir);
+    _snprintf(lspwinfn1, MAX_PATH_SIZE-1, "%s\\lsp.win1", model_dir);
     char *lspwinfn2 = new char[MAX_PATH_SIZE];
-    _snprintf(lspwinfn2, MAX_PATH_SIZE-1, "%s\\model\\lsp.win2", model_dir);
+    _snprintf(lspwinfn2, MAX_PATH_SIZE-1, "%s\\lsp.win2", model_dir);
     char *lspwinfn3 = new char[MAX_PATH_SIZE];
-    _snprintf(lspwinfn3, MAX_PATH_SIZE-1, "%s\\model\\lsp.win3", model_dir);
+    _snprintf(lspwinfn3, MAX_PATH_SIZE-1, "%s\\lsp.win3", model_dir);
 
     char **lspwinfn     =   (char**)malloc(3*sizeof(char*));
     lspwinfn[0]         =   lspwinfn1;
@@ -101,15 +101,15 @@ int TTS::init(const char *model_dir)
     lspwinfn[2]         =   lspwinfn3;
 
     char *lf0name = new char[MAX_PATH_SIZE];
-    _snprintf(lf0name, MAX_PATH_SIZE-1, "%s\\model\\lf0.pdf", model_dir);
+    _snprintf(lf0name, MAX_PATH_SIZE-1, "%s\\lf0.pdf", model_dir);
     char *lf0treename = new char[MAX_PATH_SIZE];
-    _snprintf(lf0treename, MAX_PATH_SIZE-1, "%s\\model\\tree-lf0.inf", model_dir);
+    _snprintf(lf0treename, MAX_PATH_SIZE-1, "%s\\tree-lf0.inf", model_dir);
     char *lf0winfn1 = new char[MAX_PATH_SIZE];
-    _snprintf(lf0winfn1, MAX_PATH_SIZE-1, "%s\\model\\lf0.win1", model_dir);
+    _snprintf(lf0winfn1, MAX_PATH_SIZE-1, "%s\\lf0.win1", model_dir);
     char *lf0winfn2 = new char[MAX_PATH_SIZE];
-    _snprintf(lf0winfn2, MAX_PATH_SIZE-1, "%s\\model\\lf0.win2", model_dir);
+    _snprintf(lf0winfn2, MAX_PATH_SIZE-1, "%s\\lf0.win2", model_dir);
     char *lf0winfn3 = new char[MAX_PATH_SIZE];
-    _snprintf(lf0winfn3, MAX_PATH_SIZE-1, "%s\\model\\lf0.win3", model_dir);
+    _snprintf(lf0winfn3, MAX_PATH_SIZE-1, "%s\\lf0.win3", model_dir);
 
     char **lf0winfn     =   (char**)malloc(3*sizeof(char*));
     lf0winfn[0]         =   lf0winfn1;
@@ -131,23 +131,23 @@ int TTS::init(const char *model_dir)
 
     //韵律词、韵律短语、语调短语模型
     char *wm = new char[MAX_PATH_SIZE];
-    _snprintf(wm, MAX_PATH_SIZE-1, "%s/resource/ProsodicWordModel.txt", model_dir);
+    _snprintf(wm, MAX_PATH_SIZE-1, "data/resource/ProsodicWordModel.txt");
     pw= ReadTable(wm);   //韵律词
 
     char *ppm = new char[MAX_PATH_SIZE];
-    _snprintf(ppm, MAX_PATH_SIZE-1, "%s/resource/ProsodicPhraseModel.txt", model_dir);
+    _snprintf(ppm, MAX_PATH_SIZE-1, "data/resource/ProsodicPhraseModel.txt");
     pp= ReadTable(ppm);  //韵律短语
 
     char *ipm = new char[MAX_PATH_SIZE];
-    _snprintf(ipm, MAX_PATH_SIZE-1, "%s/resource/IntPhraseModel.txt", model_dir);
+    _snprintf(ipm, MAX_PATH_SIZE-1, "data/resource/IntPhraseModel.txt");
     ip= ReadTable(ipm);       //语调短语
 
     char *dict = new char[MAX_PATH_SIZE];
-    _snprintf(dict, MAX_PATH_SIZE-1, "%s/resource/dict.txt", model_dir);
+    _snprintf(dict, MAX_PATH_SIZE-1, "data/resource/dict.txt");
     wt = ReadSTable(dict);   //字典
 
     char *c2p = new char[MAX_PATH_SIZE];
-    _snprintf(c2p, MAX_PATH_SIZE-1, "%s/resource/char2pinyin.txt", model_dir);
+    _snprintf(c2p, MAX_PATH_SIZE-1, "data/resource/char2pinyin.txt");
     ct = ReadSTable(c2p);  //字音对照表
 
     TTS_Label_Init(); //初始化Label模块
